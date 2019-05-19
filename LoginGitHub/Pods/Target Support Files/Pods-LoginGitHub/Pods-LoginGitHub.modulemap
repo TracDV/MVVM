@@ -1,0 +1,6 @@
+framework module Pods_LoginGitHub {
+  umbrella header "Pods-LoginGitHub-umbrella.h"
+
+  export *
+  module * { export * }
+}
