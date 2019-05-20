@@ -18,6 +18,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var validPasswordText: UILabel!
     @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var errorLogin: UILabel!
+    
     var viewModel: LoginViewModel!
     let disposeBag = DisposeBag()
     
@@ -35,6 +38,16 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func didTapLogin(_ sender: Any) {
+       _ = viewModel.userLogin.asObservable().subscribe { user in
+            guard let user = user.element else {
+                self.errorLogin.text = "User name or password is wrong"
+                return
+            }
+            //Transit to Home Controller
+        let homeController = HomeViewController.init(nibName: "HomeViewController", bundle: nil)
+        self.navigationController?.pushViewController(homeController, animated: true)
+//            self.errorLogin.text = user?.name
+        }
     }
     
     func bindUI() {

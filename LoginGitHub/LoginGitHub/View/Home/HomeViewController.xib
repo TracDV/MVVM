@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="LoginGitHub" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="jzG-dM-y5C" id="YD4-bl-bIU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4A49F622924592008C0699 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4A49F522924592008C0699 /* User.swift */; };
 		95A6361760BB18A926865BE4 /* Pods_LoginGitHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95F48FC7A24684AB2A33178 /* Pods_LoginGitHub.framework */; };
 		A7505E6980EA53B6059AC4C5 /* Pods_LoginGitHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9327707A9C4CF130CC27C53 /* Pods_LoginGitHubTests.framework */; };
 		AEB67F1CE836E13DD15629DE /* Pods_LoginGitHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A03E3BE2BD77A97C6F3CCD /* Pods_LoginGitHubUITests.framework */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A4A49F522924592008C0699 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		32DCB645729B6FE41BDB6387 /* Pods-LoginGitHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginGitHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-LoginGitHubUITests/Pods-LoginGitHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		335E014A7DD9944C2EDAB851 /* Pods-LoginGitHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginGitHub.debug.xcconfig"; path = "Target Support Files/Pods-LoginGitHub/Pods-LoginGitHub.debug.xcconfig"; sourceTree = "<group>"; };
 		358470D032ED3E9EC53940BC /* Pods-LoginGitHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginGitHub.release.xcconfig"; path = "Target Support Files/Pods-LoginGitHub/Pods-LoginGitHub.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				B6068364228F9896008DC582 /* Login.swift */,
+				2A4A49F522924592008C0699 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				B606836C228FA2C8008DC582 /* DetailViewController.swift in Sources */,
 				B6068363228F987C008DC582 /* LoginViewModel.swift in Sources */,
 				B6068365228F9896008DC582 /* Login.swift in Sources */,
+				2A4A49F622924592008C0699 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

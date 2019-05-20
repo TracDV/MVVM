@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="LoginGitHub" customModuleProvider="target">
             <connections>
+                <outlet property="errorLogin" destination="nsy-j9-I0O" id="gqb-sq-Uj1"/>
                 <outlet property="loginButton" destination="J82-Kb-Cvz" id="K3n-Ct-EdT"/>
                 <outlet property="passwordTextField" destination="cde-v4-x3P" id="C2B-9Y-Unc"/>
                 <outlet property="userNameTextField" destination="BRf-BM-EC2" id="Hzt-OG-880"/>
@@ -44,7 +45,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                         </textField>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsJ-qZ-tVR">
                                                             <rect key="frame" x="0.0" y="30" width="335" height="30"/>
@@ -77,7 +78,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                                         </textField>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2so-D6-bAG">
                                                             <rect key="frame" x="0.0" y="30" width="335" height="30"/>
@@ -115,11 +116,20 @@
                                                         <action selector="didTapLogin:" destination="-1" eventType="touchUpInside" id="G9N-gm-OGw"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsy-j9-I0O">
+                                                    <rect key="frame" x="20" y="107" width="335" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
+                                                <constraint firstItem="nsy-j9-I0O" firstAttribute="leading" secondItem="FnY-uw-Ggu" secondAttribute="leading" constant="20" id="A2D-l4-4gM"/>
                                                 <constraint firstAttribute="trailing" secondItem="J82-Kb-Cvz" secondAttribute="trailing" constant="20" id="AA5-3y-oZG"/>
                                                 <constraint firstItem="J82-Kb-Cvz" firstAttribute="leading" secondItem="FnY-uw-Ggu" secondAttribute="leading" constant="20" id="Lrf-ga-BK4"/>
+                                                <constraint firstAttribute="trailing" secondItem="nsy-j9-I0O" secondAttribute="trailing" constant="20" id="XQ3-bF-mEm"/>
+                                                <constraint firstItem="nsy-j9-I0O" firstAttribute="top" secondItem="J82-Kb-Cvz" secondAttribute="bottom" constant="10" id="ed2-Nb-P9B"/>
                                                 <constraint firstItem="J82-Kb-Cvz" firstAttribute="centerY" secondItem="FnY-uw-Ggu" secondAttribute="centerY" id="s1S-qv-cUo"/>
                                                 <constraint firstItem="J82-Kb-Cvz" firstAttribute="centerX" secondItem="FnY-uw-Ggu" secondAttribute="centerX" id="vfd-78-gnW"/>
                                             </constraints>
